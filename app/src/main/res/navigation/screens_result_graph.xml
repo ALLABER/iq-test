@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/result_graph"
+    app:startDestination="@id/resultPointsFragment">
+
+    <fragment
+        android:id="@+id/resultPointsFragment"
+        android:name="com.allaber.iqtest.screens.result.points.view.PointsFragment"
+        android:label="PointsFragment">
+        <action
+            android:id="@+id/actionResultPointsFragmentToResultQuestionsFragment"
+            app:destination="@id/resultQuestionsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultQuestionsFragment"
+        android:name="com.allaber.iqtest.screens.result.questions.view.QuestionsFragment"
+        android:label="QuestionsFragment">
+        <action
+            android:id="@+id/actionResultQuestionsFragmentToResultQuestionFragment"
+            app:destination="@id/resultQuestionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultQuestionFragment"
+        android:name="com.allaber.iqtest.screens.result.question.view.QuestionFragment"
+        android:label="QuestionFragment" />
+</navigation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/test_graph"
+    app:startDestination="@id/testQuestionFragment">
+
+    <fragment
+        android:id="@+id/testQuestionFragment"
+        android:name="com.allaber.iqtest.screens.result.question.view.QuestionFragment"
+        android:label="QuestionFragment" >
+        <action
+            android:id="@+id/actionResultQuestionFragmentToResultTimeFragment"
+            app:destination="@id/testTimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testTimeFragment"
+        android:name="com.allaber.iqtest.screens.test.time.view.TimeFragment"
+        android:label="TimeFragment" />
+</navigation>

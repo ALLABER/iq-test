@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    tools:ignore="InvalidNavigation">
+
+    <action
+        android:id="@+id/actionGlobalMainFlowFragment"
+        app:destination="@id/mainFlowFragment"
+        app:popUpTo="@id/nav_graph" />
+
+    <action
+        android:id="@+id/actionGlobalTestFlowFragment"
+        app:destination="@id/testFlowFragment"
+        app:popUpTo="@id/nav_graph" />
+
+    <action
+        android:id="@+id/actionGlobalResultFlowFragment"
+        app:destination="@id/resultFlowFragment"
+        app:popUpTo="@id/nav_graph" />
+
+    <fragment
+        android:id="@+id/mainFlowFragment"
+        android:name="com.allaber.iqtest.screens.main.MainFlowFragment"
+        android:label="flow_fragment_main"
+        tools:layout="@layout/flow_fragment_main" />
+
+    <fragment
+        android:id="@+id/testFlowFragment"
+        android:name="com.allaber.iqtest.screens.test.TestFlowFragment"
+        android:label="flow_fragment_test"
+        tools:layout="@layout/flow_fragment_test" />
+
+    <fragment
+        android:id="@+id/resultFlowFragment"
+        android:name="com.allaber.iqtest.screens.result.ResultFlowFragment"
+        android:label="flow_fragment_result"
+        tools:layout="@layout/flow_fragment_result" />
+</navigation>

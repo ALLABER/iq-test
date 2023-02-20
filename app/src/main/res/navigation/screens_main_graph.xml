@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainHomeFragment">
+
+    <fragment
+        android:id="@+id/mainHomeFragment"
+        android:name="com.allaber.iqtest.screens.main.home.view.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_main_home">
+        <action
+            android:id="@+id/actionMainHomeFragmentToMainInfoFragment"
+            app:destination="@id/mainInfoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainInfoFragment"
+        android:name="com.allaber.iqtest.screens.main.info.view.InfoFragment"
+        android:label="InfoFragment"
+        tools:layout="@layout/fragment_main_info">
+        <action
+            android:id="@+id/actionMainInfoFragmentToMainAgeFragment"
+            app:destination="@id/mainAgeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainAgeFragment"
+        android:name="com.allaber.iqtest.screens.main.age.view.AgeFragment"
+        android:label="AgeFragment"
+        tools:layout="@layout/fragment_main_age" />
+</navigation>
