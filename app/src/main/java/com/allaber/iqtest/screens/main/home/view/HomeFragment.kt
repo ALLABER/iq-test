@@ -23,8 +23,8 @@ class HomeFragment : Fragment(R.layout.fragment_main_home) {
     }
 
     private fun clickStart() {
-        binding.button.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_infoFragment)
-        }
+//        binding.button.setOnClickListener {
+//            findNavController().navigate(R.id.action_homeFragment_to_infoFragment)
+//        }
     }
 }
